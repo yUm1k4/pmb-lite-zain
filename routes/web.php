@@ -29,6 +29,12 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
+Route::prefix('/pendaftaran')->group(function () {   
+    Route::get('/', function () {
+        return view('pendaftaran/buat-akun');
+    });
+});
+
 Route::group(['middleware' => ['auth','verified']], function () {
     Route::get('/dashboard', function () {
         return view('home', ['users' => User::get(),]);
