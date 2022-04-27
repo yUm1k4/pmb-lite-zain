@@ -41,7 +41,7 @@
                             <div class="form-group row align-items-center">
                                 <label for="username" class="form-control-label col-sm-3 text-md-right">Username</label>
                                 <div class="col-sm-6 col-md-9">
-                                    <input type="text" required name="username" class="form-control" id="username" label="Username untuk login">
+                                    <input type="text" required name="username" class="form-control" id="username" placeholder="Username untuk login">
                                     <div class="invalid-feedback">
                                     </div>
                                 </div>
@@ -49,20 +49,34 @@
                             <div class="form-group row align-items-center">
                                 <label for="password" class="form-control-label col-sm-3 text-md-right">Password</label>
                                 <div class="col-sm-6 col-md-9">
-                                    <input type="password" class="form-control" required name="password" id="password">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="fas fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <input type="password" class="form-control" data-indicator="pwindicator" required name="password" id="password">
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group row align-items-center">
                                 <label for="repeat-password" class="form-control-label col-sm-3 text-md-right">Ulangi Password</label>
                                 <div class="col-sm-6 col-md-9">
-                                    <input type="password" class="form-control" required name="repeat-password" id="repeat-password">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="fas fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <input type="password" class="form-control" data-indicator="pwindicator" required name="repeat-password" id="repeat-password">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-footer bg-whitesmoke text-md-right">
-                            <a href="{{ url('pendafaran/data-pribadi') }}"></a>
-                            <button class="btn btn-primary" id="save-btn">Save Changes</button>
                             <button class="btn btn-secondary" type="reset">Reset</button>
+                            <a class="btn btn-primary" href="{{ url('pendaftaran/data-pribadi') }}">Simpan dan Lanjutkan</a>
+                            {{-- <button class="btn btn-primary" id="save-btn">Save Changes</button> --}}
                         </div>
                     </div>
                 </form>
