@@ -53,7 +53,7 @@
             <div class="main-content" style="padding-left: 30px !important;">
                 @yield('content')
             </div>
-            <footer class="main-footer">
+            <footer class="main-footer" style="padding: 20px 20px 20px 50px;">
                 @include('layouts.footer')
             </footer>
         </div>

@@ -39,6 +39,9 @@ Route::prefix('/pendaftaran')->group(function () {
     Route::get('/pilihan-prodi', function () { 
         return view('pendaftaran/pilihan-prodi'); 
     });
+    Route::get('/finish', function () { 
+        return view('pendaftaran/finish'); 
+    });
 });
 
 Route::group(['middleware' => ['auth','verified']], function () {

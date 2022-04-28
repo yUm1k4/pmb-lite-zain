@@ -41,8 +41,9 @@
                             <div class="form-group row align-items-center">
                                 <label for="username" class="form-control-label col-sm-3 text-md-right">Username</label>
                                 <div class="col-sm-6 col-md-9">
-                                    <input type="text" required name="username" class="form-control" id="username" placeholder="Username untuk login">
+                                    <input type="text" required name="username" class="form-control is-invalid" id="username" placeholder="Username untuk login">
                                     <div class="invalid-feedback">
+                                        Contoh error kalo mau pakai: Maaf, Username sudah digunakan, silahkan gunakan yang lain.
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +56,10 @@
                                                 <i class="fas fa-lock"></i>
                                             </div>
                                         </div>
-                                        <input type="password" class="form-control" data-indicator="pwindicator" required name="password" id="password">
+                                        <input type="password" class="form-control is-valid" data-indicator="pwindicator" required name="password" id="password">
+                                        <div class="valid-feedback">
+                                            Contoh success kalo mau pakai: Good Job!
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -68,7 +72,10 @@
                                                 <i class="fas fa-lock"></i>
                                             </div>
                                         </div>
-                                        <input type="password" class="form-control" data-indicator="pwindicator" required name="repeat-password" id="repeat-password">
+                                        <input type="password" class="form-control is-invalid" data-indicator="pwindicator" required name="repeat-password" id="repeat-password">
+                                        <div class="invalid-feedback">
+                                            Contoh error kalo mau pakai: Password tidak sesuai!
+                                        </div>
                                     </div>
                                 </div>
                             </div>
